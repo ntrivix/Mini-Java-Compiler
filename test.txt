@@ -1,0 +1,79 @@
+program mojprogram
+
+int a, b, c;
+char d[];
+const int efg = 5;
+
+class A{
+  bool is;
+  void check()
+  {
+    d="gsodkg";
+  }
+
+  int testOv(A klasa, int c, string s)
+  int a;
+  {
+    a = 5;
+    return a;
+  }
+}
+
+class B extends A
+{
+  A zam;
+  A mb(){
+    zam = new A;
+    return zam;
+  }
+
+  char testOv()
+  char c;
+  {
+    c = 'c';
+    return c;
+  }
+}
+
+class C
+{
+  B klasaB;
+  char v;
+  int o;
+  C mc(int a, int b){
+    return this;
+  }
+  A vracaKlasuA(B b,A a){
+    o = 25+52;
+    a=b.mb();
+    this.klasaB = b;
+    this.v = this.klasaB.testOv();
+    a=this.vracaKlasuA(b,a);
+    a=this.vracaKlasuA(null,this.vracaKlasuA(this.klasaB,this.klasaB.zam));
+    o = this.klasaB.zam.testOv(a, o, "sfasdf");
+  }
+}
+
+class D extends A{
+  B bb;
+  int ma(B b, C c){
+    return 1;
+  }
+  B vb(){
+    bb = new B;
+    return bb;
+  }
+}
+
+
+{
+void main()
+D ddd;
+C ccc;
+int yo;
+{
+  ddd = new D;
+  ccc = new C;
+  yo = ddd.ma(ddd.vb(), ccc.mc(5,6));
+}
+}

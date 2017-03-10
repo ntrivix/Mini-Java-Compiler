@@ -1,0 +1,10 @@
+.vagrant/*
+.vagrant
+.vagrant/
+/.vagrant
+/.vagrant/
+a.out
+testerr1.c
+y.output
+y.tab.c
+y.tab.h
