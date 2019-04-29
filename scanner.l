@@ -4,7 +4,6 @@
 
     #define YYSTYPE char*
 
-    extern YYSTYPE yylval;
     int line = 1;
 %}
 

@@ -1,7 +1,3 @@
-
-// Parser za microC (samo gramatika)
-
-
 %{
     #include <stdio.h>
     #include <string.h>
@@ -738,11 +734,8 @@ int yyerror(char *s) {
     return 0;
 }
 
-int main() {
-    char fileName[60];
-    printf("Ime fajla:\n");
-    scanf("%s",fileName);
-    yyin = fopen(fileName, "r");
+int main(int argc, char *argv[]) {
+    yyin = fopen(argv[1], "r");
     yyparse();
     return error_count;
 }

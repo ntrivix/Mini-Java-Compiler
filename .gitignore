@@ -8,3 +8,8 @@ testerr1.c
 y.output
 y.tab.c
 y.tab.h
+*.bin
+
+\.vscode/ipch/d14b84be07b9b87/translator\.ipch
+
+lex\.yy\.c

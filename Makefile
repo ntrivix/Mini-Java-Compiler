@@ -15,17 +15,8 @@ lex.yy.c: $(LEX_SRC) y.tab.c
 	lex -I $<
 
 y.tab.c: $(YACC_SRC)
-	yacc -d -v $<
+	bison -dy -v $<
 
 clean:
 	rm -f $(COMPILER_CLEAN)
 
-# testiranje kompajlera
-# u petlji će se na ulaz proslediti svi test*.c fajlovi
-# ako u fajlu postoji linija sa tekstom //OPIS:, ispisace se na ekranu
-test: a.out
-	@for test in test*.c; do \
-	echo "\n\n---------------------------------------\nTesting: $$test"; \
-	grep "//OPIS:" $$test; \
-	./a.out < $$test; \
-	done
